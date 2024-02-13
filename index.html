@@ -41,7 +41,7 @@
     <main>
       <div class="flex justify-between gap-4">
         <!-- cards shapes -->
-        <div class="card-shapes grid lg:grid-cols-3 gap-4">
+        <div id="card-shapes" class="grid lg:grid-cols-3 gap-4">
           <!-- triangle -->
           <div class="card border-2 border-slate-100 pt-5 w-96 bg-base-100">
             <figure>
@@ -54,12 +54,16 @@
                 class="flex text-base font-normal justify-center items-center mt-3"
               >
                 <input
-                  class="outline-none w-24 px-2 h-8 bg-gray-100 rounded-md mr-2"
+                  class="valueA outline-none w-24 px-2 h-8 bg-gray-100 rounded-md mr-2"
+                  placeholder="b"
                   type="number"
+                  min="0"
                 />cm
                 <input
-                  class="outline-none w-24 px-2 h-8 bg-gray-100 rounded-md mx-2"
+                  class="valueB outline-none w-24 px-2 h-8 bg-gray-100 rounded-md mx-2"
+                  placeholder="h"
                   type="number"
+                  min="0"
                 />
                 cm
               </div>
@@ -67,7 +71,7 @@
                 <button
                   class="btn bg-sky-500 text-xl font-bold text-white px-9 py-2 w-full"
                 >
-                  Buy Now
+                  Calculate Area
                 </button>
               </div>
             </div>
@@ -79,17 +83,21 @@
             </figure>
             <div class="card-body text-center">
               <h2 class="font-bold text-2xl">Rectangle</h2>
-              <p class="text-base font-normal">Area (A) = 0.5 X b X h</p>
+              <p class="text-base font-normal">Area (A) = w x l</p>
               <div
                 class="flex text-base font-normal justify-center items-center mt-3"
               >
                 <input
                   class="outline-none w-24 px-2 h-8 bg-gray-100 rounded-md mr-2"
+                  placeholder="w"
                   type="number"
+                  min="0"
                 />cm
                 <input
                   class="outline-none w-24 px-2 h-8 bg-gray-100 rounded-md mx-2"
+                  placeholder="l"
                   type="number"
+                  min="0"
                 />
                 cm
               </div>
@@ -97,7 +105,7 @@
                 <button
                   class="btn bg-sky-500 text-xl font-bold text-white px-9 py-2 w-full"
                 >
-                  Buy Now
+                  Calculate Area
                 </button>
               </div>
             </div>
@@ -109,17 +117,21 @@
             </figure>
             <div class="card-body text-center">
               <h2 class="font-bold text-2xl">Parallelogram</h2>
-              <p class="text-base font-normal">Area (A) = 0.5 X b X h</p>
+              <p class="text-base font-normal">Area (A) = b X h</p>
               <div
                 class="flex text-base font-normal justify-center items-center mt-3"
               >
                 <input
                   class="outline-none w-24 px-2 h-8 bg-gray-100 rounded-md mr-2"
+                  placeholder="b"
                   type="number"
+                  min="0"
                 />cm
                 <input
                   class="outline-none w-24 px-2 h-8 bg-gray-100 rounded-md mx-2"
+                  placeholder="h"
                   type="number"
+                  min="0"
                 />
                 cm
               </div>
@@ -127,7 +139,7 @@
                 <button
                   class="btn bg-sky-500 text-xl font-bold text-white px-9 py-2 w-full"
                 >
-                  Buy Now
+                  Calculate Area
                 </button>
               </div>
             </div>
@@ -139,17 +151,23 @@
             </figure>
             <div class="card-body text-center">
               <h2 class="font-bold text-2xl">Rhombus</h2>
-              <p class="text-base font-normal">Area (A) = 0.5 X b X h</p>
+              <p class="text-base font-normal">
+                Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub>
+              </p>
               <div
                 class="flex text-base font-normal justify-center items-center mt-3"
               >
                 <input
                   class="outline-none w-24 px-2 h-8 bg-gray-100 rounded-md mr-2"
+                  placeholder="d₁"
                   type="number"
+                  min="0"
                 />cm
                 <input
                   class="outline-none w-24 px-2 h-8 bg-gray-100 rounded-md mx-2"
+                  placeholder="d₂"
                   type="number"
+                  min="0"
                 />
                 cm
               </div>
@@ -157,7 +175,7 @@
                 <button
                   class="btn bg-sky-500 text-xl font-bold text-white px-9 py-2 w-full"
                 >
-                  Buy Now
+                  Calculate Area
                 </button>
               </div>
             </div>
@@ -169,17 +187,21 @@
             </figure>
             <div class="card-body text-center">
               <h2 class="font-bold text-2xl">Pentagon</h2>
-              <p class="text-base font-normal">Area (A) = 0.5 X b X h</p>
+              <p class="text-base font-normal">Area (A) = 0.5 X p X b</p>
               <div
                 class="flex text-base font-normal justify-center items-center mt-3"
               >
                 <input
                   class="outline-none w-24 px-2 h-8 bg-gray-100 rounded-md mr-2"
+                  placeholder="p"
                   type="number"
+                  min="0"
                 />cm
                 <input
                   class="outline-none w-24 px-2 h-8 bg-gray-100 rounded-md mx-2"
+                  placeholder="b"
                   type="number"
+                  min="0"
                 />
                 cm
               </div>
@@ -187,7 +209,7 @@
                 <button
                   class="btn bg-sky-500 text-xl font-bold text-white px-9 py-2 w-full"
                 >
-                  Buy Now
+                  Calculate Area
                 </button>
               </div>
             </div>
@@ -205,11 +227,15 @@
               >
                 <input
                   class="outline-none w-24 px-2 h-8 bg-gray-100 rounded-md mr-2"
+                  placeholder="a"
                   type="number"
+                  min="0"
                 />cm
                 <input
                   class="outline-none w-24 px-2 h-8 bg-gray-100 rounded-md mx-2"
+                  placeholder="b"
                   type="number"
+                  min="0"
                 />
                 cm
               </div>
@@ -217,19 +243,58 @@
                 <button
                   class="btn bg-sky-500 text-xl font-bold text-white px-9 py-2 w-full"
                 >
-                  Buy Now
+                  Calculate Area
                 </button>
               </div>
             </div>
           </div>
         </div>
         <!-- calculation  -->
-        <div class="border-2 rounded-2xl border-slate-100 w-96 h-96 py-7">
+        <div
+          class="border-2 rounded-2xl border-slate-100 w-96 min-h-96 py-7 px-3 space-y-3"
+        >
           <h1 class="underline text-xl font-bold text-center">
             Area Calculation
           </h1>
+          <ol
+            id="area-list"
+            class="text-base font-normal list-decimal pl-3 space-y-3"
+          >
+            <li
+              id="triangle"
+              class="flex gap-8 items-center justify-between"
+              hidden
+            ></li>
+            <li
+              id="rectangle"
+              class="flex gap-8 items-center justify-between"
+              hidden
+            ></li>
+            <li
+              id="parallelogram"
+              class="flex gap-8 items-center justify-between"
+              hidden
+            ></li>
+            <li
+              id="rhombus"
+              class="flex gap-8 items-center justify-between"
+              hidden
+            ></li>
+            <li
+              id="pentagon"
+              class="flex gap-8 items-center justify-between"
+              hidden
+            ></li>
+            <li
+              id="ellipse"
+              class="flex gap-8 items-center justify-between"
+              hidden
+            ></li>
+          </ol>
         </div>
       </div>
+
+      <span id="balance"></span>
     </main>
     <script src="./script/script.js"></script>
   </body>
